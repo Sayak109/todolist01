@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  background: #000;
+  color: antiquewhite;
+}
+.todos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.todo_container {
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 10px;
+  background-color: bisque;
+  border: 1px solid gray;
+  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.todo_container h1 {
+  color: #1a1a1a;
+  padding: 5px;
+  margin: 0px !important;
+  margin-top: 2px !important;
+  font-size: 30px;
+}
+
+.todo_container p {
+  margin: 0px !important;
+  color: #646cff;
+  font-size: larger;
+  padding: 8px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em;
+  color: #d80505;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #e1b985;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  max-width: 100px;
+}
+
+.todo_container button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+button:hover {
+  border-color: #3a44fd;
+  background-color: #db881c;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
