@@ -1,0 +1,198 @@
+/* #root {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.todo_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.todo_container {
+  background-color: burlywood;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  height: 150px;
+  position: relative;
+}
+
+.todo_container p {
+  position: absolute;
+  left: 12px;
+  bottom: 25px;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn_primary {
+  width: 150px;
+  background-color: aqua;
+  border-color: blue;
+  font-size: 16px;
+}
+
+.btn_primary:hover {
+  background-color: rgb(0, 221, 255);
+}
+
+.btn_danger {
+  width: 80px;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  font-size: 16px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+.btn_edit {
+  width: 80px;
+  background-color: #f0ed1e;
+  border-color: #f0ed1e;
+  font-size: 16px;
+  position: absolute;
+  left: 100px;
+  bottom: 12px;
+}
+.modal_backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.modal h4 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form_group {
+  margin-bottom: 15px;
+}
+
+.text_field {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.modal_buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+} */
+#root {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.todo_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.todo_container {
+  background-color: darksalmon;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 10px;
+  height: 150px;
+  position: relative;
+}
+
+.todo_container p {
+  position: absolute;
+  left: 10px;
+  bottom: 25px;
+}
+
+.btn {
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+.btn_primary {
+  width: 10%;
+  background-color: #65ff8e;
+}
+.btn_edit {
+  width: 20%;
+  background-color: aqua;
+  position: absolute;
+  left: 130px;
+  bottom: 10px;
+}
+
+.btn_delete {
+  width: 24%;
+  background-color: rgb(247, 31, 31);
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
+
+.modal_backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+.modal_form {
+  padding: 20px;
+}
+
+.modal_input {
+  padding: 8px;
+  width: 90%;
+  border: 1px solid;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.btn_modal {
+  display: flex;
+  font-weight: 20px;
+  gap: 10px;
+}
