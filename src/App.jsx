@@ -6,10 +6,19 @@ import Todolist from "./component/Todolist";
 function App() {
   return (
     <div>
-      <h1>Todo List Page</h1>
-      <Routes>
-        <Route path="/todos" element={<Todolist />} />
-      </Routes>
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          color: "black",
+        }}
+      >
+        Todo List
+      </h1>
+      <Todolist />
+      {/* <Routes>
+        <Route path="/" element={<Todolist />} />
+      </Routes> */}
     </div>
   );
 }
