@@ -279,15 +279,26 @@ const Todolist = () => {
         }
       );
       const data = await response.json();
+      const updatedTodo = {
+        ...editTodo,
+        todo: newTodo.todo,
+        completed: newTodo.completed,
+      };
 
       setTodolist((prev) =>
-        prev.map((item) => (item?.id === editTodo?.id ? data : item))
+        prev.map((item) => (item?.id === editTodo?.id ? updatedTodo : item))
       );
       setNewTodo({ todo: "", completed: false });
       setOpenModal(false);
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const handleClose = () => {
+    setOpenModal(false),
+      setEditTodo(null),
+      setNewTodo({ todo: "", completed: false });
   };
 
   useEffect(() => {
@@ -330,7 +341,12 @@ const Todolist = () => {
         })}
       </div>
       {openModal && (
-        <div className="modal_backdrop" onClick={() => setOpenModal(false)}>
+        <div
+          className="modal_backdrop"
+          onClick={() => {
+            handleClose();
+          }}
+        >
           <div className="modal" onClick={(e) => e.stopPropagation()}>
             <form
               onSubmit={editTodo ? handleUpdateTodo : handleAddTodo}
@@ -377,11 +393,7 @@ const Todolist = () => {
                   className="btn"
                   type="button"
                   onClick={() => {
-                    setOpenModal(false),
-                      setNewTodo(
-                        { todo: "", completed: false },
-                        setEditTodo(null)
-                      );
+                    handleClose();
                   }}
                 >
                   Cancel
